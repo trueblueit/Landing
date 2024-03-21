@@ -1,8 +1,10 @@
 <?php
 // process_form.php
-
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Methods: POST, GET, OPTIONS");
+header("Access-Control-Allow-Headers: Content-Type, X-Requested-With");
 // Database configuration
-$host = '154.41.240.103'; // Replace with your MySQL server hostname or IP address
+$host = 'srv1151.hstgr.io'; // Replace with your MySQL server hostname or IP address
 $username = 'u966329698_lifeisok'; // Replace with your MySQL username
 $password = 'Lifeisok083'; // Replace with your MySQL password
 $database = 'u966329698_react_lifeisok'; // Replace with your MySQL database name
@@ -20,13 +22,13 @@ $data = json_decode(file_get_contents('php://input'), true);
 $first_name = $conn->real_escape_string($data['first_name']);
 $last_name = $conn->real_escape_string($data['last_name']);
 $email = $conn->real_escape_string($data['email']);
-$qualifications = $conn->real_escape_string($data['qualifications']);
+$qualification = $conn->real_escape_string($data['qualifications']);
 $position = $conn->real_escape_string($data['position']);
 $description = $conn->real_escape_string($data['description']);
 
 // Insert data into career table
 $sql = "INSERT INTO career (first_name, last_name, email, qualifications, position, description) 
-        VALUES ('$first_name', '$last_name', '$email', '$qualifications', '$position', '$description')";
+        VALUES ('$first_name', '$last_name', '$email', '$qualification', '$position', '$description')";
 
 if ($conn->query($sql) === TRUE) {
     $response = [
