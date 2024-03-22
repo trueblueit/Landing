@@ -6,6 +6,7 @@ import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
 import Container from "react-bootstrap/Container";
+import axios from "axios";
 
 export function DemoModal(props) {
   const [formData, setFormData] = useState({
@@ -28,19 +29,8 @@ export function DemoModal(props) {
     e.preventDefault();
     console.log(formData);
     try {
-      const response = await fetch(
-        "http://srv1151.hstgr.io/u966329698_react_lifeisok/main.php",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            "X-Requested-With": "XMLHttpRequest",
-          },
-          body: JSON.stringify(formData),
-        }
-      );
-      const data = await response.json();
-      console.log(data); // Response from PHP script
+      const response = await axios.post("http://localhost:80", formData);
+      const data = response.data; // Response from PHP script
       // Optionally, show a success message or handle further actions
     } catch (error) {
       console.error("Error:", error);
