@@ -105,11 +105,7 @@ const Feedback = () => {
   };
 
   return (
-    <section
-      className="section-sm "
-      id="feedback"
-      style={{ backgroundColor: "#fffff2" }}
-    >
+    <section className="section-sm bg-light" id="feedback">
       <Container fluid>
         <Row>
           <div
@@ -118,11 +114,6 @@ const Feedback = () => {
               maxWidth: "600px",
               padding: "20px",
               backgroundColor: "#f2f2f2",
-              borderRadius: "8px",
-              boxShadow: "0 2px 4px rgba(0,0,0,.1)",
-              border: " solid",
-              borderColor: "#efa27d",
-              background: "#f2f2f2",
               borderRadius: "15px",
             }}
           >

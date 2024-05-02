@@ -8,7 +8,7 @@ const ContactUs = () => {
       <section
         className="section"
         id="contact"
-        style={{ padding: "60px 0", backgroundColor: "#f8f9fa" }}
+        style={{ padding: "60px 0", backgroundColor: "#f2f2f2" }}
       >
         <Container>
           <div style={{ marginBottom: "40px", textAlign: "center" }}>
@@ -23,16 +23,13 @@ const ContactUs = () => {
             <Col lg="6" md="12" className="mb-4 mb-lg-0">
               <LinkBox
                 p="4"
-                bg="#f2f2f2"
                 boxShadow="md"
                 textAlign="center"
                 mb="4"
                 height={{ base: "auto", lg: "150px" }}
-                border="solid"
-                borderColor="#efa27d"
-                background="#f2f2f2"
                 borderRadius="15px"
                 className="mb-3"
+                background="white"
               >
                 <Heading>
                   <i
@@ -52,14 +49,11 @@ const ContactUs = () => {
             <Col lg="6" md="12">
               <LinkBox
                 p="4"
-                bg="#f2f2f2"
                 boxShadow="md"
                 textAlign="center"
                 mb="4"
                 height={{ base: "auto", lg: "150px" }}
-                border="solid"
-                borderColor="#efa27d"
-                background="#f2f2f2"
+                background="white"
                 borderRadius="15px"
                 className="mb-3"
               >

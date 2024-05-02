@@ -31,7 +31,6 @@ class Index2 extends Component {
         <Section />
 
         <Values />
-        <Separator imageUrl="assets/lifeisok/feedback-bg.jpg" />
         <Services />
         <Separator imageUrl="assets/lifeisok/feedback-bg.jpg" />
         <Features />

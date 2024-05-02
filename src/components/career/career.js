@@ -213,7 +213,7 @@ export function Career() {
       <section
         className="section-sm "
         id="career"
-        style={{ backgroundColor: "#FAFAFA", padding: "80px 0" }}
+        style={{ backgroundColor: "#f2f2f2", padding: "80px 0" }}
       >
         <Container>
           <Row className="justify-content-center">
@@ -221,9 +221,7 @@ export function Career() {
               <div
                 className="about-card p-5 shadow-sm"
                 style={{
-                  border: " solid",
-                  borderColor: "#efa27d",
-                  background: "#f2f2f2",
+                  background: "white",
                   borderRadius: "15px",
                   textAlign: "center",
                   position: "relative",

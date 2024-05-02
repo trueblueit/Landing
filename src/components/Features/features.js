@@ -18,7 +18,11 @@ class Features extends Component {
 
     return (
       <React.Fragment>
-        <section className="section-sm bg-light" id="features">
+        <section
+          className="section-sm "
+          style={{ backgroundColor: "#f2f2f2" }}
+          id="features"
+        >
           <Container>
             <h2
               className="section-heading"
@@ -75,12 +79,9 @@ class Features extends Component {
                     style={{
                       marginBottom: "20px",
                       padding: "20px",
-                      backgroundColor: boxBackgroundColor,
+                      backgroundColor: "white",
                       display: "flex",
                       alignItems: "center",
-                      border: " solid",
-                      borderColor: "#efa27d",
-                      background: "#f2f2f2",
                       borderRadius: "15px",
                     }}
                   >

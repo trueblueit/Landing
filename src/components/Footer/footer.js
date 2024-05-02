@@ -107,10 +107,13 @@ class Footer extends Component {
             </Row>
           </div>
         </footer>
-        <div className="bg-dark py-4">
+        <div
+          className="bg-dark py-4"
+          style={{ justifyContent: "space-evenly" }}
+        >
           <Row style={{ width: "80%", margin: "0 auto" }}>
             <Col xs={12} md={3} lg={3}>
-              <Row className="justify-content-end">
+              <Row className="justify-content-space-around m-1">
                 <img
                   src="assets/lifeisok/flag1.png"
                   alt="Feature Representation"
@@ -121,7 +124,6 @@ class Footer extends Component {
                 />
 
                 <img
-                  className="ms-3 me-5"
                   src="assets/lifeisok/flag2.png"
                   alt="Feature Representation"
                   style={{

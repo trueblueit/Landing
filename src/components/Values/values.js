@@ -10,7 +10,7 @@ class Values extends Component {
   render() {
     return (
       <React.Fragment>
-        <section className="section-sm bg-light">
+        <section className="section-sm " style={{ backgroundColor: "#f2f2f2" }}>
           <Container>
             <h2
               className="section-heading"
@@ -29,20 +29,17 @@ class Values extends Component {
                   key={index}
                   style={{
                     marginBottom: "10px",
-                    padding: "5px",
-                    borderRadius: "8px",
+                    padding: "5px 10px",
                     display: "flex",
                     alignItems: "center",
-                    border: " solid",
-                    borderColor: "#efa27d",
-                    background: "#f2f2f2",
+                    backgroundColor: "white",
                     borderRadius: "15px",
                     overflow: "auto",
                   }}
                 >
                   <div style={{ fontSize: "24px" }}>
                     <i
-                      className={value.icon + " me-2"}
+                      className={value.icon + " me-4"}
                       style={{ fontSize: "55px" }}
                     ></i>
                   </div>

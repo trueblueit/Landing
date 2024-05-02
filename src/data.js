@@ -22,37 +22,36 @@ export const values = [
   {
     id: 1,
     icon: "fa fa-heartbeat",
-    name: "COMPASSION",
+    name: "PASSION",
     description:
-      "We offer support from our desire to help individuals and emphasize on the operational environment is less stressful and more satisfying.",
+      "We have a passion to work to our work ethics. Every member of staff is passionate about their work and takes the participant as part of the family.",
   },
   {
     id: 2,
     icon: "fa fa-users",
-    name: "TOGETHERNESS/INTEGRITY",
+    name: "SAFE AND HARMONIOUS WORKING ENVIRONMENT",
     description:
-      "We cement our relationship by encouraging each other to strive together, feel safe and belong to a group.",
+      "We offer a workplace that provides support, guidence and acceptance to staff and participants.",
   },
   {
     id: 3,
     icon: "fa fa-gratipay",
     name: "RESEPCT",
-    description:
-      "We recognise individual rights and dignity. We do care about the diversity and social cohesion/inclusion.",
+    description: "We respect people's decisions, opinions and views.",
   },
   {
     id: 4,
     icon: "fa fa-slideshare",
-    name: "TRUST",
+    name: "HONESTY",
     description:
-      "We trust our ability to contribute to a positive change. We thrive to achieve the best potential of individual.",
+      "We are trustworthy and tell the truth to keep our promises to you. ",
   },
   {
     id: 5,
     icon: "fa fa-search",
-    name: "EXPLORE",
+    name: "PRIVACY AND CONFIDENTIALITY",
     description:
-      "To grow in an everyday changing environment, we keep questioning and challenging ourselves and the status quo.",
+      "This is of utmost importance as outlined in our Privacy and Confidentiality Policy and procedures.",
   },
 ];
 
