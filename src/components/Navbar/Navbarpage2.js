@@ -12,7 +12,7 @@ import {
   DropdownItem,
 } from "reactstrap";
 
-import Container from "react-bootstrap/Container";
+import { Container, Row } from "react-bootstrap";
 import { navItems } from "../../data";
 
 class Navbar_Page extends Component {
@@ -67,22 +67,53 @@ class Navbar_Page extends Component {
       <React.Fragment>
         <Container>
           <div
-            className={`navbar navbar-expand-lg fixed-top navbar-custom sticky ${
+            style={{
+              position: "fixed",
+              width: "100%",
+              zIndex: "100",
+              top: "0px",
+              left: "0px",
+              backgroundColor: "#f2f2f2",
+            }}
+            className={`navbar-custom navbar-expand-lg ${
               isNavSticky ? "nav-sticky  sticky-dark " : ""
             }`}
           >
-            <NavbarBrand
-              className="logo order-1 order-lg-0 me-lg-0 me-2"
-              href="/"
+            <div
+              className="subnav"
+              style={{
+                margin: "0px",
+                height: "10vh",
+                backgroundColor: "#b4432b",
+              }}
             >
-              <img
-                src="assets/lifeisok/logo.png"
-                height={50}
-                width={250}
-                className="d-inline-block align-text-top img-fluid ms-4"
-                alt="Life is ok Logo"
-              />
-            </NavbarBrand>
+              <form
+                style={{
+                  marginLeft: "50%",
+                  width: "45%",
+                }}
+                className="form-inline justify-content-end "
+              >
+                <div className="input-group" style={{ padding: "10px" }}>
+                  <input
+                    type="search"
+                    className="form-control"
+                    placeholder="Search"
+                    aria-label="Search"
+                    aria-describedby="button-addon2"
+                  />
+                  <div className="input-group-append">
+                    <button
+                      className="btn mybtn ms-2"
+                      type="button"
+                      id="button-addon2"
+                    >
+                      Search
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
 
             <NavbarToggler onClick={this.toggle}>
               <i className="fa fa-bars"></i>
@@ -94,7 +125,18 @@ class Navbar_Page extends Component {
               navbar
               className={`me-5 mt-4 mt-lg-0 ${isOpenMenu ? "" : "text-center"}`}
             >
-              <Nav className="navbar-nav navbar-center mx-auto" id="mySidenav">
+              <NavbarBrand
+                className="logo order-1 order-lg-0 me-lg-0 me-2"
+                href="/"
+              >
+                <img
+                  src="assets/lifeisok/logo2.png"
+                  style={{ height: "10vh" }}
+                  className="d-inline-block align-text-top img-fluid ms-4"
+                  alt="Life is ok Logo"
+                />
+              </NavbarBrand>
+              <Nav className="navbar-nav  " id="mySidenav">
                 {navItems.map((item, key) => (
                   <NavItem
                     key={key}

@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 
 import { Container, Row, Col } from "reactstrap";
-import Lottie from "lottie-react";
-import animationData from "../../animation/Animation - bg.json";
 import {
   FaRegSmile,
   FaHeart,
@@ -124,9 +122,6 @@ class Features extends Component {
               </Col>
             </Row>
           </Container>
-          <div className="animationboxbg">
-            <Lottie animationData={animationData} />
-          </div>
         </section>
       </React.Fragment>
     );

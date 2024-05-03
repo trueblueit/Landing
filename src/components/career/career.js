@@ -210,14 +210,10 @@ export function Career() {
 
   return (
     <React.Fragment>
-      <section
-        className="section-sm "
-        id="career"
-        style={{ backgroundColor: "#f2f2f2", padding: "80px 0" }}
-      >
+      <section className="section-sm " id="career">
         <Container>
           <Row className="justify-content-center">
-            <Col lg="10">
+            <Col>
               <div
                 className="about-card p-5 shadow-sm"
                 style={{
@@ -227,6 +223,8 @@ export function Career() {
                   position: "relative",
                   top: "0",
                   transition: "top ease 0.5s",
+                  backgroundColor: "#f2f2f2",
+                  height: "500px",
                 }}
                 onMouseEnter={(e) => (e.currentTarget.style.top = "-7px")}
                 onMouseLeave={(e) => (e.currentTarget.style.top = "0")}

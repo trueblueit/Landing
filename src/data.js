@@ -199,7 +199,7 @@ export const navItems = [
   },
   {
     id: 2,
-    link: "/#features",
+    link: "/about#features",
     idnm: "features",
     navheading: "Features",
     icon: FaStar,

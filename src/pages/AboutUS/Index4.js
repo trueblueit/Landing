@@ -5,6 +5,7 @@ import Contact from "../../components/Contact Us/contact-us";
 import Aboutbody from "./about-body";
 import Gallery from "./gallery";
 import Topsection from "../../components/common_section/topsection";
+import Features from "../../components/Features/features";
 class Index4 extends Component {
   render() {
     return (
@@ -16,6 +17,7 @@ class Index4 extends Component {
         />
         <Aboutbody />
         <Gallery />
+        <Features />
         <Contact />
         <Footer />
       </React.Fragment>
