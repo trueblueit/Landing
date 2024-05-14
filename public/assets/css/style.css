@@ -267,6 +267,17 @@ p {
   fill: rgb(0, 0, 0);
 }
 
+.subnav-form {
+  margin-left: 50%;
+  width: 45%;
+}
+@media (max-width: 768px) {
+  .subnav-form {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
 .navbar-custom {
   padding: 20px 0px;
   width: 100%;

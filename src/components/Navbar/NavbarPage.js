@@ -115,7 +115,7 @@ class Navbar_Page extends Component {
                         </DropdownToggle>
                         <DropdownMenu
                           style={{
-                            backgroundColor: "ivory",
+                            backgroundColor: "#f2f2f2",
                             color: "black",
                           }}
                         >

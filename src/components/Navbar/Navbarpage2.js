@@ -87,13 +87,7 @@ class Navbar_Page extends Component {
                 backgroundColor: "#b4432b",
               }}
             >
-              <form
-                style={{
-                  marginLeft: "50%",
-                  width: "45%",
-                }}
-                className="form-inline justify-content-end "
-              >
+              <form className="form-inline justify-content-end subnav-form">
                 <div className="input-group" style={{ padding: "10px" }}>
                   <input
                     type="search"
@@ -155,12 +149,7 @@ class Navbar_Page extends Component {
                         <DropdownToggle nav caret>
                           {item.navheading}
                         </DropdownToggle>
-                        <DropdownMenu
-                          style={{
-                            backgroundColor: "ivory",
-                            color: "black",
-                          }}
-                        >
+                        <DropdownMenu>
                           {item.submenu.map((subItem, subKey) => (
                             <DropdownItem key={subKey} href={subItem.link}>
                               {subItem.navheading}
